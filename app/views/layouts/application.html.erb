@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AfrikApp</title>
+  <title>Afrik App</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+  <nav class="round">
+    <ul>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Users", users_path %></li>
+      <li><%= link_to "Contacts", current_user %></li>
+    </ul>
+  </nav>
 </head>
 <body>
 
