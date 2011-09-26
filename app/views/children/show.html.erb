@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @child.name %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @child.dob %>
+</p>
+
+<p>
+  <b>Missing city:</b>
+  <%= @child.missing_city %>
+</p>
+
+<p>
+  <b>Missing state:</b>
+  <%= @child.missing_state %>
+</p>
+
+<p>
+  <b>Missing country:</b>
+  <%= @child.missing_country %>
+</p>
+
+<p>
+  <b>Sex:</b>
+  <%= @child.sex %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @child.height %>
+</p>
+
+<p>
+  <b>Hair color:</b>
+  <%= @child.hair_color %>
+</p>
+
+<p>
+  <b>Eye color:</b>
+  <%= @child.eye_color %>
+</p>
+
+<p>
+  <b>Police case no:</b>
+  <%= @child.police_case_no %>
+</p>
+
+<p>
+  <b>Circumstances:</b>
+  <%= @child.circumstances %>
+</p>
+
+
+<%= link_to 'Edit', edit_child_path(@child) %> |
+<%= link_to 'Back', children_path %>

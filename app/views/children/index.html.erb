@@ -1,0 +1,43 @@
+<h1>Listing children</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Dob</th>
+    <th>Missing city</th>
+    <th>Missing state</th>
+    <th>Missing country</th>
+    <th>Sex</th>
+    <th>Height</th>
+    <th>Hair color</th>
+    <th>Eye color</th>
+    <th>Police case no</th>
+    <th>Circumstances</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @children.each do |child| %>
+  <tr>
+    <td><%= child.name %></td>
+    <td><%= child.dob %></td>
+    <td><%= child.missing_city %></td>
+    <td><%= child.missing_state %></td>
+    <td><%= child.missing_country %></td>
+    <td><%= child.sex %></td>
+    <td><%= child.height %></td>
+    <td><%= child.hair_color %></td>
+    <td><%= child.eye_color %></td>
+    <td><%= child.police_case_no %></td>
+    <td><%= child.circumstances %></td>
+    <td><%= link_to 'Show', child %></td>
+    <td><%= link_to 'Edit', edit_child_path(child) %></td>
+    <td><%= link_to 'Destroy', child, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Child', new_child_path %>
